@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-inline: 4rem;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+
+button {
+  color: white;
+  background-color: #191919;
+  border-radius: .3rem;
+  box-shadow: none;
+  border-color: transparent;
+  cursor: pointer;
+  padding: .3rem 1rem;
+}
+
+button:disabled {
+  opacity: .4;
+  cursor: not-allowed;
+}
